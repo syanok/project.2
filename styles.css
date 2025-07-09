@@ -31,3 +31,22 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.search-form {
+  margin-left: auto;
+}
+
+.search-form input {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.results {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.results li {
+  padding: 5px 0;
+}
