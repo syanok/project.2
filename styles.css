@@ -4,62 +4,47 @@ body {
   padding: 0;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-nav .logo {
-  font-size: 1.5em;
-}
-
-nav .nav-links {
-  display: flex;
-  gap: 15px;
-}
-
-nav .nav-links a {
+  background: #24292e;
   color: white;
-  text-decoration: none;
-}
-
-.search-form {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
   padding: 10px 20px;
 }
 
-.search-form input {
-  padding: 8px;
-  flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+#search-form {
+  display: flex;
 }
 
-.search-form button {
-  padding: 8px 12px;
-  border: none;
-  background-color: #333;
+#search-input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 16px;
+  margin-left: 8px;
+  background-color: #28a745;
   color: white;
-  border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
 
-.results {
+button:hover {
+  background-color: #218838;
+}
+
+#results-container {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
 }
 
-.results img {
+#results-container img {
   max-width: 200px;
-  border-radius: 8px;
+  border-radius: 6px;
 }

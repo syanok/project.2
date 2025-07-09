@@ -3,36 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>JavaScript Navbar</title>
+ <title>Navbar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 
-  
-<!-- Navbar -->
-  <nav>
+   <nav class="navbar">
     <div class="logo">Giphy Search</div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Explore</a>
-      <a href="#">About</a>
-    </div>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search GIFs..." required />
+      <button type="submit">Search</button>
+    </form>
   </nav>
 
-
-
-  <!-- Search Bar -->
-  <form id="search-form" class="search-form">
-    <input type="text" id="search-input" placeholder="Search for GIFs..." required />
-    <button type="submit">Search</button>
-  </form>
-
-
-
-  <!-- Results Area -->
-  <div id="results" class="results"></div>
-
+  <div id="results-container"></div>
 
 
 
