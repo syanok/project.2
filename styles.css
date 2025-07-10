@@ -1,16 +1,24 @@
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  
 }
 
+/* Navbar */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #24292e;
   color: white;
   padding: 10px 20px;
-  flex-wrap: wrap;
 }
 
 .logo {
@@ -18,17 +26,51 @@ body {
   font-weight: bold;
 }
 
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav Content Wrapper */
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🔗 Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* 🔍 Search Bar */
 .search-form {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
-  flex-wrap: wrap;
 }
 
 #search-input {
   padding: 6px;
   font-size: 16px;
-  flex: 1;
   min-width: 200px;
 }
 
@@ -38,14 +80,15 @@ button {
   background-color: #28a745;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #218838;
 }
 
+/* 🔽 GIF Results */
 .results {
   display: flex;
   flex-wrap: wrap;
@@ -58,17 +101,55 @@ button:hover {
   width: 100%;
   max-width: 200px;
   border-radius: 8px;
+  transition: transform 0.2s;
 }
 
-/* Mobile responsive */
-@media (max-width: 320px) {
+.results img:hover {
+  transform: scale(1.03);
+}
+
+/* ✅ Responsive Mobile Styling */
+@media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .menu-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-content {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-content.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .nav-links li a {
+    width: 100%;
+  }
+
   .search-form {
     flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  #search-input,
+  button {
     width: 100%;
   }
 
@@ -81,3 +162,108 @@ button:hover {
     max-width: 90%;
   }
 }
+
+
+/* ✅ Contact Page Styles */
+.contact-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.contact-section h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #24292e;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+#form-message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+/* Make input fields full width on mobile */
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #80d0ff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
