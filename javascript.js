@@ -78,3 +78,24 @@ if (contactForm) {
     }
   });
 }
+
+// ===== Delayed hero text on index.html =====
+document.addEventListener('DOMContentLoaded', () => {
+  const heroHeading = document.getElementById('hero-heading');
+  if (!heroHeading) return;           // only run on index.html
+
+  // Promise that resolves after 2000 ms
+  const delay = ms => new Promise(res => setTimeout(res, ms));
+
+  delay(2000).then(() => {
+    heroHeading.classList.remove('hidden');
+    heroHeading.classList.add('show');
+  });
+});
+
+
+
+
+ function changeColor(){
+     document.body.style.backgroundColor = "lightpink"
+ }

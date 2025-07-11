@@ -26,7 +26,6 @@ body {
   font-weight: bold;
 }
 
-/* Hamburger */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -43,7 +42,7 @@ body {
   gap: 20px;
 }
 
-/* 🔗 Nav Links */
+/*Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -62,7 +61,7 @@ body {
   text-decoration: underline;
 }
 
-/* 🔍 Search Bar */
+/* Search Bar */
 .search-form {
   display: flex;
   gap: 10px;
@@ -88,7 +87,7 @@ button:hover {
   background-color: #218838;
 }
 
-/* 🔽 GIF Results */
+/*GIF Results */
 .results {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +107,7 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* ✅ Responsive Mobile Styling */
+/* Mobile Styling */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -164,7 +163,7 @@ button:hover {
 }
 
 
-/* ✅ Contact Page Styles */
+/* Contact Page */
 .contact-section {
   padding: 40px 20px;
   max-width: 800px;
@@ -220,7 +219,7 @@ button:hover {
   font-weight: bold;
 }
 
-/* Make input fields full width on mobile */
+/* mobile */
 @media (max-width: 768px) {
   .contact-form input,
   .contact-form textarea,
@@ -267,3 +266,21 @@ button:hover {
   }
 }
 
+.hidden {
+  opacity: 0;
+}
+
+/* Fade‑in animation when .show is added */
+.show {
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+
+.changeColor {
+background-color: #a539d0;
+display: inline-block;
+}
