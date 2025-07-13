@@ -26,6 +26,7 @@ body {
   font-weight: bold;
 }
 
+/* Hamburger */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -200,7 +201,7 @@ button:hover {
 }
 
 .contact-form button {
-  background-color: #007bff;
+  background-color: #a539d0;
   color: white;
   font-size: 16px;
   border: none;
@@ -215,7 +216,7 @@ button:hover {
 
 #form-message {
   margin-top: 20px;
-  color: green;
+  color: #a539d0;
   font-weight: bold;
 }
 
@@ -229,12 +230,12 @@ button:hover {
 }
 
 .site-footer {
-  background-color: #222;
+  background-color: #101010e3;
   color: #ccc;
-  padding: 5px;
+  padding: 1px;
   text-align: center;
   font-size: 0.95em;
-  margin-top: 40px;
+  margin-top: 280px;
 }
 
 .footer-container {
