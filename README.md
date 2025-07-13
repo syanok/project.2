@@ -8,5 +8,5 @@ Technologies Used ( .HTML , .CSS, .JS ): A combination of HTML, JavaScript and C
 
 Ideas for future improvement (minimum of 3):
 Adding additional images, other than the search results, to make the Contact and About pages more appealing.
-Using the Promise variable for more text in the website.
+Using the Promise variable for more text in the website, so it appears at different times.
 Add more spacing between the blocks of text to spread them out more on the webpages.
